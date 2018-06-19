@@ -1,0 +1,17 @@
+<h1>Index Page</h1>
+
+
+<form action="/charge" method = 'post'>
+  <script
+    src = 'https://checkout.stripe.com/checkout.js'
+    class = 'stripe-button'
+    data-key = "#",   <!-- public key obtained from stripe -->
+    data-amount = '3000'
+    data-name = 'cute dog'
+    data-description = 'cute'
+    data-locale = 'auto'
+    data-currency = 'gbp'
+  >
+  </script>
+  <input type="hidden" name="chargeAmount" value="3000">
+</form>
